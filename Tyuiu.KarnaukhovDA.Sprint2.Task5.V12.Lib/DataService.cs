@@ -20,7 +20,7 @@ namespace Tyuiu.KarnaukhovDA.Sprint2.Task5.V12.Lib
                             break;
                         case 3:
                             prevDay = 29;
-                            prevMonth = 2;
+                            prevMonth = 02;
                             prevYear = g;
                             break;
                         case 2:
@@ -30,7 +30,7 @@ namespace Tyuiu.KarnaukhovDA.Sprint2.Task5.V12.Lib
                         case 9:
                         case 11:
                             prevDay = 31;
-                            prevMonth = m - 1;
+                            prevMonth = m - 01;
                             prevYear = g;
                             break;
                         case 5:
@@ -38,7 +38,7 @@ namespace Tyuiu.KarnaukhovDA.Sprint2.Task5.V12.Lib
                         case 10:
                         case 12:
                             prevDay = 30;
-                            prevMonth = m - 1;
+                            prevMonth = m - 01;
                             prevYear = g;
                             break;
                             default:
@@ -47,12 +47,12 @@ namespace Tyuiu.KarnaukhovDA.Sprint2.Task5.V12.Lib
                     }
                     break;
                 default:
-                    prevDay = n - 1;
+                    prevDay = n - 01;
                     prevMonth = m;
                     prevYear = g;   
                     break;
             }
-            return $"{prevDay}.{prevMonth}.{prevYear}";
+            return $"{prevDay:D2}.{prevMonth:D2}.{prevYear}";
         }
     }
 }

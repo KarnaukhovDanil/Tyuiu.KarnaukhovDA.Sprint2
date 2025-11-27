@@ -9,10 +9,10 @@ namespace Tyuiu.KarnaukhovDA.Sprint2.Task5.V12.Test
         {
             DataService ds = new DataService();
             int g = 2024;
-            int m = 3;
+            int m = 03;
             int n = 15;
             string res = ds.FindDateOfPreviousDay(g, m, n);
-            string wait = ("14.3.2024");
+            string wait = ("14.03.2024");
             Assert.AreEqual(wait, res);
 
         }
@@ -21,8 +21,8 @@ namespace Tyuiu.KarnaukhovDA.Sprint2.Task5.V12.Test
         {
             DataService ds = new DataService();
             int g = 2024;
-            int m = 1;
-            int n = 1;
+            int m = 01;
+            int n = 01;
             string res = ds.FindDateOfPreviousDay(g, m, n);
             string wait = ("31.12.2023");
             Assert.AreEqual(wait, res);
@@ -32,10 +32,10 @@ namespace Tyuiu.KarnaukhovDA.Sprint2.Task5.V12.Test
         {
             DataService ds = new DataService();
             int g = 2024;
-            int m = 3;
-            int n = 1;
+            int m = 03;
+            int n = 01;
             string res = ds.FindDateOfPreviousDay(g, m, n);
-            string wait = ("29.2.2024");
+            string wait = ("29.02.2024");
             Assert.AreEqual(wait, res);
         }
         [TestMethod]
@@ -43,10 +43,10 @@ namespace Tyuiu.KarnaukhovDA.Sprint2.Task5.V12.Test
         {
             DataService ds = new DataService();
             int g = 2024;
-            int m = 5;
-            int n = 1;
+            int m = 05;
+            int n = 01;
             string res = ds.FindDateOfPreviousDay(g, m, n);
-            string wait = ("30.4.2024");
+            string wait = ("30.04.2024");
             Assert.AreEqual(wait, res);
         }
         
