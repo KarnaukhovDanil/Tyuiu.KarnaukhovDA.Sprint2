@@ -37,7 +37,7 @@ namespace Tyuiu.KarnaukhovDA.Sprint2.Task6.V8.Lib
                 prevMonth = n;
                 prevDay = m - 1;
             }
-            return $"Предыдущая дата : {prevDay}.{prevMonth}";
+            return $"{prevDay:D2}.{prevMonth:D2}";
         }
     }
 }
