@@ -224,5 +224,20 @@ namespace Tyuiu.KarnaukhovDA.Sprint2.Task7.V8.Test
 
             Assert.AreEqual(res, wait);
         }
+        public void ValidCheckDotInShadedArea14()
+        {
+            DataService ds = new DataService();
+
+            double x = 3.0;
+            double y = 1.0;
+
+
+            bool res = ds.CheckDotInShadedArea(x, y);
+
+            bool wait = true;
+
+
+            Assert.AreEqual(res, wait);
+        }
     }
 }
